@@ -23,7 +23,9 @@ class Process:
         if 'mass' in retorno and retorno['mass']:
             output['peso'] = retorno['mass'] + 'Kg'
         if 'hair_color' in retorno and retorno['hair_color']:
-            output['cor_do_cabelo'] = retorno['hair_color']
+            cabelo = retorno['hair_color']
+            cabelo = cores_olhos(cabelo)
+            output['cor_do_cabelo'] = cabelo
         if 'skin_color' in retorno and retorno['skin_color']:
             output['cor_da_pele'] = retorno['skin_color']
         if 'eye_color' in retorno and retorno['eye_color']:

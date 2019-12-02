@@ -18,6 +18,12 @@ def cores_olhos(text):
         text = 'castanho'
     elif text == 'amber':
         text = 'ambar'
+    elif text == 'blond':
+        text = 'loiro'
+    elif text == 'orange':
+        text = 'laranja'
+    elif text == 'light':
+        text = 'clara'
     else:
         text = text
 
@@ -28,6 +34,8 @@ def sexo(text):
         text = 'Masculino'
     elif text == 'female':
         text = 'Feminino'
+    elif text == 'hermaphrodite':
+        text = 'hermafrodita'
     else:
         text = text
 

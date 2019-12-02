@@ -46,7 +46,9 @@ class Process:
                 cabelo = cores_olhos(cabelo)
                 output['cor_do_cabelo'] = cabelo
             if 'skin_color' in retorno and retorno['skin_color']:
-                output['cor_da_pele'] = retorno['skin_color']
+                pele = retorno['skin_color']
+                pele = cores_olhos(pele)
+                output['cor_da_pele'] = pele
             if 'eye_color' in retorno and retorno['eye_color']:
                 olhos = retorno['eye_color']
                 olhos = cores_olhos(olhos)
